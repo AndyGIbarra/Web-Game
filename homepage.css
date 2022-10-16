@@ -1,0 +1,47 @@
+#title {
+    font-size: 25px;
+    text-align: center;
+    margin:1em;
+    border:solid red 2px;
+    padding:0px 0px 0px 0px;
+    background:white; 
+    color:rgb(15, 45, 214);
+}
+
+body{
+    background-image:url("/assets/woodbackground.jpg");
+    margin: 0;
+}
+
+h2 {
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#computerCards, #playerCards {
+    display: grid;
+    grid-template-columns: repeat(6, 2em);
+    grid-template-rows: 5em 1em 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid blue;
+    color:aqua;
+}
+
+#centerCards {
+    display: grid;
+    grid-template-columns: repeat(4, 2em);
+    grid-template-rows: 5em 1em 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid blue;
+    color:aqua;
+}
+
