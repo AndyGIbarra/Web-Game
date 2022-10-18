@@ -3,23 +3,34 @@
 <head>
     <title>Speed Web Game</title>
     <link rel="stylesheet" href="/homepage.css">
-    <script src="deck.js"></script>
+    <script src="deck.js" type="module"></script>
 </head>
 <body>
     <h1 id="title">Speed</h1>
-    <div>
         <h2>Computer</h2>
         <div id="computerCards">
-            <div class="cards" id="computerDeck">15</div>
-            <div class="cards" id="computerHand"></div>
+            <div class="cards" class="stack" id="computerDeck">15</div>
+            <div class="cards" class="computerHand"></div>
+            <div class="cards" class="computerHand"></div>
+            <div class="cards" class="computerHand"></div>
+            <div class="cards" class="computerHand"></div>
+            <div class="cards" class="computerHand"></div>
         </div>
+    <div id="centerCards">
+        <div class="cards" class="stack">5</div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards" class="stack">5</div>
     </div>
-    <div class="cards" id="centerCards">5 1 1 5</div>
     <div id="player">
         <h2>Player</h2>
         <div id="playerCards">
-            <div class="cards" id="playerDeck">15</div>
-            <div class="cards" id="playerHand"></div>
+            <div class="cards" class="stack" id="playerDeck">15</div>
+            <div class="cards" class="playerHand"></div>
+            <div class="cards" class="playerHand"></div>
+            <div class="cards" class="playerHand"></div>
+            <div class="cards" class="playerHand"></div>
+            <div class="cards" class="playerHand"></div>
         </div>
     </div>
 </body>

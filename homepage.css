@@ -1,28 +1,67 @@
+/**, *::after, *::before{
+    box-sizing:border-box;
+}*/
+
 #title {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
-    margin:1em;
-    border:solid red 2px;
-    padding:0px 0px 0px 0px;
-    background:white; 
-    color:rgb(15, 45, 214);
+    margin: 1em;
+    padding:0px 0px 0px 0px; 
+    color:black;
 }
 
 body{
-    background-image:url("/assets/woodbackground.jpg");
+    /*background-image:url("/assets/woodbackground.jpg");*/
     margin: 0;
 }
 
 h2 {
-    color:white;
+    color:black;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
 }
+
 #computerCards, #playerCards {
+    display:grid;
+    grid-template-columns: repeat(6, 120px);
+    grid-template-rows: 140px;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+}
+
+#centerCards {
+    margin: 50px;
+    display:grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: 140px;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+}
+
+.cards {
+    margin: 0;
+    height:100%;
+    width: 70%;
+    border: 1px solid black;
+}
+    /*display:grid;
+    grid-template-columns: repeat(6, 10px);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    color:black;
+}
+/* #computerCards, #playerCards {
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(6, 2em);
-    grid-template-rows: 5em 1em 5em;
+    grid-template-rows: 50px 20px 50px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,5 +82,4 @@ h2 {
     width: 100%;
     border: 1px solid blue;
     color:aqua;
-}
-
+}*/

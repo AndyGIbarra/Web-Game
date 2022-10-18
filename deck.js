@@ -1,13 +1,11 @@
 const Suits = ["Hearts", "Spades", "Diamonds", "Clubs"]
 const Values = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"]
 
-class Deck {
+export class Deck {
     constructor(cards = newDeck()){
         this.cards = cards
     }
-    //get stackOfCards(){
-        //return this.cards.length
-    //}
+
     shuffle(){
         for (let i = 52 - 1; i > 0; i--){
             const newIndex = Math.floor(Math.random() * (i + 1))
