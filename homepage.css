@@ -1,7 +1,3 @@
-/**, *::after, *::before{
-    box-sizing:border-box;
-}*/
-
 #title {
     font-size: 30px;
     text-align: center;
@@ -44,42 +40,16 @@ h2 {
 
 .cards {
     margin: 0;
-    height:100%;
+    height: 100%;
     width: 70%;
     border: 1px solid black;
 }
-    /*display:grid;
-    grid-template-columns: repeat(6, 10px);
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    border: 1px solid black;
-    color:black;
-}
-/* #computerCards, #playerCards {
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(6, 2em);
-    grid-template-rows: 50px 20px 50px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    border: 1px solid blue;
-    color:aqua;
-}
 
-#centerCards {
-    display: grid;
-    grid-template-columns: repeat(4, 2em);
-    grid-template-rows: 5em 1em 5em;
+body .stack{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    border: 1px solid blue;
-    color:aqua;
-}*/
+    align-items:center;
+    font-size: 50px;
+    color:white;
+    background: darkblue;
+}
