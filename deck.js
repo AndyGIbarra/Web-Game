@@ -1,13 +1,17 @@
-const Suits = ["Hearts", "Spades", "Diamonds", "Clubs"]
-const Values = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"]
+const Suits = ["H", "S", "D", "C"]
+const Values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
-export class Deck {
+export default class Deck {
     constructor(cards = newDeck()){
         this.cards = cards
     }
 
+    get numberOfCards(){
+        return this.cards.length
+    }
+
     shuffle(){
-        for (let i = 52 - 1; i > 0; i--){
+        for (let i = this.numberOfCards - 1; i > 0; i--){
             const newIndex = Math.floor(Math.random() * (i + 1))
             const oldValue = this.cards[newIndex]
             this.cards[newIndex] = this.cards[i]
@@ -21,6 +25,16 @@ class Card{
         this.suit = suit
         this.value = value
     }
+    get color(){
+        return this.suit === "H" || this.suit === "D" ? "red" : "black"
+    }
+    getHTML(){
+        const cardDiv = document.createElement("div")
+        cardDiv.innerText = this.suit
+        cardDiv.classList.add("cards", this.color)
+        cardDiv.dataset.value = '${this.value} ${this.suit}'
+        return cardDiv
+    }
 }
 
 function newDeck(){
@@ -30,7 +44,3 @@ function newDeck(){
         })
     })
 }
-
-const deck = new Deck()
-deck.shuffle()
-console.log(deck.cards)
