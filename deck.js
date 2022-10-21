@@ -21,7 +21,7 @@ export default class Deck {
 }
 
 class Card{
-    constructor(suit,value){
+    constructor(suit, value){
         this.suit = suit
         this.value = value
     }
@@ -32,7 +32,7 @@ class Card{
         const cardDiv = document.createElement("div")
         cardDiv.innerText = this.suit
         cardDiv.classList.add("cards", this.color)
-        cardDiv.dataset.value = '${this.value} ${this.suit}'
+        cardDiv.dataset.value  = `${this.value} ${this.suit}`
         return cardDiv
     }
 }
@@ -40,7 +40,7 @@ class Card{
 function newDeck(){
     return Suits.flatMap(suit => {
         return Values.map(value =>{
-            return new Card(suit,value)
+            return new Card(suit, value)
         })
     })
 }
