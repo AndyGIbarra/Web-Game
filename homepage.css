@@ -1,11 +1,14 @@
-
-
 #title {
     font-size: 30px;
     text-align: center;
     margin: 1em;
     padding:0px 0px 0px 0px; 
     color:black;
+}
+
+::selection {
+    color: none;
+    background: none;
 }
 
 body{
@@ -91,7 +94,16 @@ body .stack{
     align-items:center;
     font-size: 50px;
     color:white;
-    background: darkblue;
+    background: black;
     height: 100%;
     width: 70%;
+}
+
+.playerHand{
+    cursor: move;
+    z-index: 10;
+}
+
+h6 {
+    position:relative;
 }

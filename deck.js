@@ -1,7 +1,8 @@
-const Suits = ["H", "S", "D", "C"]
+const Suits = ["♥️", "♠", "♦", "♣"]
 const Values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
 export default class Deck {
+    // from Stack Overflow, fixed undefined issue
     constructor(cards = newDeck()){
         this.cards = cards
     }
@@ -26,14 +27,14 @@ class Card{
         this.value = value
     }
     get color(){
-        return this.suit === "H" || this.suit === "D" ? "red" : "black"
+        return this.suit === "♥️" || this.suit === "♦" ? "red" : "black"
     }
     getHTML(){
-        const cardDiv = document.createElement("div")
-        cardDiv.innerText = this.suit
-        cardDiv.classList.add("cards", this.color)
-        cardDiv.dataset.value  = `${this.value} ${this.suit}`
-        return cardDiv
+        const cardSlot = document.createElement("h6")
+        cardSlot.innerText = this.suit
+        cardSlot.classList.add("cards", this.color)
+        cardSlot.dataset.value  = `${this.value}`
+        return cardSlot
     }
 }
 
