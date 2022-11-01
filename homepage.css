@@ -3,7 +3,7 @@
     text-align: center;
     margin: 1em;
     padding:0px 0px 0px 0px; 
-    color:black;
+    color:wheat;
 }
 
 ::selection {
@@ -12,19 +12,19 @@
 }
 
 body{
-    /*background-image:url("/assets/woodbackground.jpg");*/
+    background-image:url("/assets/woodbackground.jpg");
     margin: 0;
 }
 
 h2 {
-    color:black;
+    color:wheat;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
 }
 
-#computerCards, #playerCards {
+#computerCards, #playerCards, #centerCards {
     position:relative;
     display:grid;
     grid-template-columns: repeat(6, 120px);
@@ -36,12 +36,6 @@ h2 {
 
 #centerCards {
     margin: 50px;
-    display:grid;
-    grid-template-columns: repeat(4, 120px);
-    grid-template-rows: 140px;
-    justify-content: center;
-    align-items: center;
-    gap:25px;
 }
 
 .cards {
@@ -96,13 +90,10 @@ body .stack{
     align-items:center;
     font-size: 50px;
     color:white;
-    background: black;
+    background: rgb(22, 56, 244);
+    opacity:1;
     height: 100%;
     width: 70%;
-}
-
-#playerCards{
-    
 }
 
 .playerHand{
